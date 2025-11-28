@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #1e1f4b, #3e2c6d);
+  color: white;
+  padding-bottom: 80px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar select {
+  background-color: #444;
+  color: white;
+}
+
+.search-bar button {
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.anime-grid img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.anime-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigasi bawah sama */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0;
+  border-top: 1px solid #444;
+  z-index: 1000;
+  height: 60px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+}

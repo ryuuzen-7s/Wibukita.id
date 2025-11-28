@@ -1,0 +1,10 @@
+{
+  "name": "wibuinfo-server",
+  "version": "1.0.0",
+  "description": "Static site + redirect for wibuinfo.fst",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

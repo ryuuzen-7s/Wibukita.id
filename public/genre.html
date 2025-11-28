@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre Anime - Wibuinfo</title>
+  <link rel="stylesheet" href="assets/style/genre.css">
+</head>
+<body>
+  <header>
+    <h1><span class="pink">WIBU</span><span class="blue">INFO.ID</span></h1>
+    <p>Temukan Genre mu disini</p>
+  </header>
+
+  <section class="genre-selector">
+    <select id="genreSelect">
+      <option value="1">Shonen</option>
+      <option value="2">Isekai</option>
+      <option value="4">Romance</option>
+      <option value="7">Comedy</option>
+      <option value="10">Fantasy</option>
+      <option value="14">Slice of Life</option>
+      <option value="22">Adventure</option>
+      <option value="24">Sci-Fi</option>
+      <option value="30">Sports</option>
+      <option value="37">Supernatural</option>
+    </select>
+    <button onclick="applyGenre()">Terapkan</button>
+    <button onclick="randomGenre()">Random</button>
+  </section>
+
+  <section class="anime-grid" id="genreResults">
+    <!-- Hasil anime berdasarkan genre akan muncul di sini -->
+  </section>
+
+  <nav class="bottom-nav">
+  <a href="index.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/home.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+  <a href="search.html">
+      <div class="nav-item">
+        <img src="assets/media/icon/search.jpg" alt="Menu">
+        <span>pencarian</span>
+      </div>
+   </a>
+   <a href="menu.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/menu.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+   <a href="about.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/about.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+</nav>
+
+  <script src="assets/logic/genre.js"></script>
+</body>
+</html>

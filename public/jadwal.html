@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Tayang Anime - Wibuinfo</title>
+  <link rel="stylesheet" href="assets/style/jadwal.css">
+</head>
+<body>
+  <header>
+    <h1><span class="pink">WIBU</span><span class="blue">INFO.ID</span></h1>
+    <p>Ini adalah jadwal tayang Anime saat ini</p>
+  </header>
+
+  <section class="jadwal-selector">
+    <select id="daySelect">
+      <option value="monday">Senin</option>
+      <option value="tuesday">Selasa</option>
+      <option value="wednesday">Rabu</option>
+      <option value="thursday">Kamis</option>
+      <option value="friday">Jumat</option>
+      <option value="saturday">Sabtu</option>
+      <option value="sunday">Minggu</option>
+    </select>
+    <button onclick="applyDay()">Terapkan</button>
+    <button onclick="randomDay()">Random</button>
+  </section>
+
+  <section class="anime-grid" id="scheduleResults">
+    <!-- Hasil anime berdasarkan hari tayang -->
+  </section>
+
+  <footer class="disclaimer">
+    <p>Jadwal bisa saja berubah dari sebelumnya tergantung kondisi penjadwalan anime tersebut</p>
+  </footer>
+
+<nav class="bottom-nav">
+  <a href="index.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/home.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+  <a href="search.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/search.jpg" alt="Menu">
+      <span>pencarian</span>
+    </div>
+  </a>
+  <a href="menu.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/menu.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+  <a href="about.html">
+    <div class="nav-item">
+      <img src="assets/media/icon/about.jpg" alt="Menu">
+      <span>Menu</span>
+    </div>
+  </a>
+</nav>
+  <script src="assets/logic/jadwal.js"></script>
+</body>
+</html>
